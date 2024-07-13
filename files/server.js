@@ -11,6 +11,11 @@ fs.writeFile(path.join(__dirname, 'lorem2.txt'),'utf8gchgjvnhvhvjhhvjhvj', (err)
     console.log('done');
 })
 
+fs.appendFile(path.join(__dirname, 'lorem2.txt'),'\n\n No textsss', (err)=>{
+    if(err) throw err;
+    console.log('append complete');
+})
+
 
 // console.log("hello world")
 // const add = (2+3)
