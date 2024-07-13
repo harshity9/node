@@ -14,6 +14,13 @@ fs.writeFile(path.join(__dirname, 'lorem2.txt'),'utf8gchgjvnhvhvjhhvjhvj', (err)
 fs.appendFile(path.join(__dirname, 'lorem2.txt'),'\n\n No textsss', (err)=>{
     if(err) throw err;
     console.log('append complete');
+
+    fs.rename(path.join(__dirname, 'lorem2.txt'),path.join(__dirname, 'lorem4.txt'), (err)=>{
+        if(err) throw err;
+        console.log('renamed');
+    })
+
+
 })
 
 
